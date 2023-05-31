@@ -1,0 +1,6 @@
+CREATE TABLE usuarios (
+  idUsuario NUMBER(10) NOT NULL PRIMARY KEY,
+  nombre VARCHAR2(50) NOT NULL,
+  correo VARCHAR2(50) NOT NULL,
+  contrasena VARCHAR2(50) NOT NULL
+);

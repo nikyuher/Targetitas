@@ -1,0 +1,85 @@
+/*BackGround*/
+body{
+    background-image: url(../imagenes/fondos/fondoContacto.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+}
+/*Contenido contacto*/
+.contenedor-contacto{
+    margin-top: 100px;
+   text-align: justify;
+}
+.fondo-cont-trabajo{
+    background-image: url(../imagenes/fondos/fondoTrabajo.jpg);
+    background-size: cover;
+}
+.cont-trabajo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 0 50px 0;
+    width: 90%;
+    margin: auto;
+}
+.contenido-cont-trabajo{
+    width: 550px;
+    font-size: 27px;
+    margin: auto;
+    height: 500px;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+    word-wrap: break-word;
+}
+.contenido-cont-trabajo h3{
+    font-size: 40px;
+}
+.contenido-cont-trabajo a{
+    color: white;
+    background-color: rgb(255, 105, 105);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+.contenido-cont-trabajo a:hover{
+    background-color: rgb(201, 39, 39);
+}
+/*horaios-piliticas-preguntas*/
+.cont-trabajo-2{
+    padding: 50px 0 50px 0;
+    text-align: justify;
+}
+.cont-trabajo-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contenedor-3columnas{
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+    margin: auto;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.cuadro-3-columnas{
+    border: 1px solid white;
+    border-radius: 5px;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+    width: 280px;
+    padding: 10px;
+    word-wrap: break-word;
+    backdrop-filter:blur(20px);
+}
+.cuadro-3-columnas h3{
+    color: orange;
+    font-size: 20px;
+}
+.cuadro-3-columnas a{
+    color: red;
+}
+.cuadro-3-columnas a:hover{
+    color: rgb(175, 11, 11);
+}

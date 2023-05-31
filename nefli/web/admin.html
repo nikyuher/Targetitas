@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Ole | Home</title>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/admin.css">
+    <link rel="stylesheet" href="style/global.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/loginRegister/registro.js"></script>
+    <script  src="js/index/index.js"></script>
+    <script type="text/javascript" src="js/admin/crud.js"></script> 
+    <script type="text/javascript" src="js/admin/tableros.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div class="contendeor-header columna-3">
+            <a class="imagen-home-logo" href="index.html"><img src="imagenes/logo-home.png" alt="Logo"></a>
+            <nav class="nav-home colores-letra">
+                <ul>
+                    <li><a href="producto.html">Products</a></li>
+                    <li><a href="contacto.html">Contact</a></li>
+                    <li><a href="sobreNosotros.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="ca-bu-lo-home">
+                <a href="carrito.html">
+                    <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+                </a>
+                <div class="fondo-buscador">
+                    <form action="" method="get">
+                        <input class="quitar-fondo-botones" type="text" name="buscador" placeholder="Buscar...">
+                        <button class="quitar-fondo-botones simbolo-buscar" type="submit">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                        </button>
+                    </form>
+                </div>
+                <div id="nombreUsuarioContainer">
+                  <a href="login.html" id="nombreUsuario">Inicia Sesión</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor-main">
+            <section>
+                <article>
+                    <div class="cont-admin" id="cont-admin">
+                        <div class="form-box register">
+			    <h2>Ingresar Datos</h2>
+			    <form id="ingresar" >
+                                <div class="respuesta" id="respuesta1"></div>
+                                <div>
+                                    <select id="tablas1">
+                                        <option value="usuarios" >Usuarios</option>
+                                        <option value="productos">Productos</option>
+                                </select>
+                                </div>
+                                <div class="input-box" id="nombreBox1">
+                                        <input type="text" name="" id="nombre1" required>
+					<label>Nombre</label>
+				</div>
+				<div class="input-box" id="descripcionBox1">
+					<input type="text" name="" id="correo1" required>
+					<label>Email</label>
+				</div>
+				<div class="input-box" id="contraBox1">
+					<input type="text" name="" id="contra1" required>
+					<label>Contraseña</label>
+				</div>
+				<button type="submit" class="btn">Ingresar</button>
+			    </form>
+			    </div>
+                <div class="form-box register">
+				<h2>Eliminar Datos</h2>
+				<form id="eliminar" >
+                                <div class="respuesta" id="respuesta2"></div>
+                                <div>
+                                    <select id="tablas2">
+                                        <option value="usuarios" >Usuarios</option>
+                                        <option value="productos">Productos</option>
+                                       </select>
+                                </div>
+                                <div class="input-box">
+					<input type="number" name="" id="idusuario2" >
+					<label>ID</label>
+				</div>
+				<div class="input-box" id="nombreBox2">
+					<input type="text" name="" id="nombre2">
+					<label>Nombre</label>
+				</div>
+				<div class="input-box" id="descripcionBox2">
+					<input type="text" name="" id="correo2">
+					<label>Email</label>
+				</div>
+				<button type="submit" class="btn">Eliminar</button>
+				</form>
+			</div>
+                        <div class="form-box register">
+				<h2>Actualizar Datos</h2>
+				<form id="actualizar" >
+                                <div class="respuesta" id="respuesta3"></div>
+                                <div>
+                                    <select id="tablas3">
+                                        <option value="usuarios" >Usuarios</option>
+                                        <option value="productos">Productos</option>
+                                    </select>
+                                </div>
+                                <div class="input-box">
+					<input type="number" name="" id="idusuario3" >
+					<label>ID</label>
+				</div>
+                                <div class="input-box" id="nombreBox3">
+					<input type="text" name="" id="nombre3">
+					<label>Nombre</label>
+				</div>
+				<div class="input-box" id="descripcionBox3">
+					<input type="text" name="" id="correo3">
+					<label>Email</label>
+				</div>
+                                <div class="input-box" id="contraBox3">
+					<input type="text" name="" id="contra3">
+					<label>Contraseña</label>
+				</div>
+				<button id="enviar" type="submit" class="btn">Actulizar</button>
+				</form>
+			</div>
+                        <div class="form-box register">
+				<h2>Mostrar datos</h2>
+				<form id="llamar" >
+                                    <div>
+                                        <select id="tablas4">
+                                            <option value="usuarios" >Usuarios</option>
+                                            <option value="productos">Productos</option>
+                                        </select>
+                                    </div>
+				    <div class="input-box" id="nombreBox4">
+					<input type="text" name="" id="nombre4">
+					<label>Username</label>
+				    </div>
+			            <div class="input-box" id="descripcionBox4">
+					<input type="email" name="" id="correo4">
+					<label>Email</label>
+				    </div>
+				    <button id="enviar" type="submit" class="btn">Llamar Usuario</button>
+				    <div class="respuesta" id="respuesta4"></div>
+				</form>
+			</div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="contenedor-footer columna-3">
+            <div class="contenedor-quienesSomos colores-letra">
+                <h3>Who we are</h3>
+                <ul>
+                    <li><a href="">Commitments</a></li>
+                    <li><a href="">Our Brands</a></li>
+                    <li><a href="">Legal Notice</a></li>
+                    <li><a href="">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="contenedor-redes colores-letra">
+                <h3>Networks</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.tiktok/" target="_blank">TikTok</a></li>
+                </ul>
+            </div>
+            <div class="contenedor-contactar colores-letra">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="">Support Center</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Cookies Policy</a></li>
+                    <li><a href="">Work with us</a></li>
+                </ul>
+            </div>
+            <div class="contenedor-copyright colores-letra ">
+                <p>© 1996-2023, Cafe CofeeCo.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

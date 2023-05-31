@@ -1,0 +1,23 @@
+
+/*Contenido sobre nosotros*/
+.info-sobreNosotros{
+    background-image: url(../imagenes/fondos/fondoNosotros.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.contenido-nosotros{
+    grid-column-start: 2;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+    width: 550px;
+    text-align: justify;
+    text-shadow: 2px 2px 2px #000000;
+    
+}
+.contenido-nosotros h3{
+    font: optional;
+    font-size: 70px;
+}

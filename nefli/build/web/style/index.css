@@ -1,0 +1,49 @@
+/*Letras para clas clases*/
+.letraColor{
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:bold;
+}
+.letraColor h1{
+    font-size: 45px;
+}
+.letraColor p{
+    font-size: 28px;
+}
+
+img{
+    width: 557px;
+    height: 90%;
+}
+/*Presentacion*/
+.presentacion{
+    background-image: url(../imagenes/fondos/fondoPresentacion.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    height: 800px;
+    display:flex;
+    text-align: right;
+    text-shadow: 6px 8px 3px black;
+}
+.columnasPresentacion{
+    margin:180px 5% 0 auto;
+}
+.contenidoPresentacion h1{
+    font-size: 90px;
+    display: flex;
+    margin-bottom: 20px;
+}
+/*Contenido 1*/
+.contenido{
+    height:400px; 
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    padding: 50px 0 50px 0; 
+}
+.contenido p{
+    width: 500px;
+    text-align: justify;
+    margin: auto;
+}
