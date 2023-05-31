@@ -77,3 +77,25 @@ body{
 .idProducto{
     display:none;
 }
+
+/*RESPONSIVE*/
+@media (max-width:1000px){
+    .nav-home{
+        display: none;
+    }
+    .ca-bu-lo-home{
+        display: none;
+    }
+    .colores-letra{
+        display: none;
+    }
+    #nombreUsuarioContainer{
+        display: none;
+    }
+    .material-symbols-outlined{
+        display: none;
+    }
+    .fondo-buscador{
+        display: none;
+    }
+  }
